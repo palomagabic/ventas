@@ -1,0 +1,41 @@
+<h1>Sales#new</h1>
+<p>Find me in app/views/sales/new.html.erb</p>
+
+<% form_with model: @sale do |f| %>
+
+<div class="">
+  <%= f.label :cod, "codigo" %>
+  <%= f.number_field :cod %>
+</div>
+
+<div class="">
+  <%= f.label :detail, "detalle" %>
+  <%= f.text_area :detail %>
+</div>
+
+<div class="">
+  <%= f.label :category, "categoria" %>
+  <%= f.text_field :category %>
+</div>
+
+<div class="">
+  <%= f.label :value, "valor" %>
+  <%= f.number_field :value %>
+</div>
+
+<div class="">
+  <%= f.label :discount, "descuento" %>
+  <%= f.number_field :discount %>
+</div>
+
+<div class="">
+  <%= f.label :tax, "impuesto" %>
+  <%= f.number_field :impuesto %>
+</div>
+
+<div class="">
+  <%= f.label :total, "total" %>
+  <%= f.number_field :total %>
+</div>
+
+<% end %>
